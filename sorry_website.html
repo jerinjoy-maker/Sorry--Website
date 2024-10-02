@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            color: #333;
+        }
+        h1 {
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 20px;
+            max-width: 80%;
+        }
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: beat 1s infinite;
+            margin-bottom: 20px;
+        }
+        .heart:before, .heart:after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+        .heart:after {
+            left: 50px;
+            top: 0;
+        }
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .button {
+            margin-top: 20px;
+            padding: 15px 25px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heart"></div>
+    <h1>I’m Sorry</h1>
+    <p>I know things have been confusing, and I haven’t been able to express myself well. I just want to be transparent with you and work things out without overthinking. I’m sharing this honestly because you matter to me.</p>
+
+</body>
+</html>
